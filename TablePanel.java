@@ -156,7 +156,7 @@ public class TablePanel extends JPanel {
             stmt.setString(1, table.getValueAt(selectedRow, 0).toString());
 
             stmt.executeUpdate();
-            JOptionPane.showMessageDialog(this, "Registro eliminado exitosamente.");
+            JOptionPane.showMessageDialog(this, "Registro eliminado.");
             loadTableData(); // Recargar datos
 
         } catch (SQLException e) {
